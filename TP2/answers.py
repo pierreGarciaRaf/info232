@@ -32,10 +32,9 @@ def answer_02():
     -------
         nearest_neighbors class
     """
-    # Wrong classifier
-    from sklearn.naive_bayes import GaussianNB
+    from sklearn.neighbors import KNeighborsClassifier
 
-    return GaussianNB
+    return KNeighborsClassifier
 
 
 def answer_03():
@@ -48,8 +47,9 @@ def answer_03():
     Returns
     -------
     """
-    from sklearn.metrics import accuracy_score as sklearn_metric
-    return sklearn_metric
+    
+    from sklearn.metrics import balanced_accuracy_score
+    return balanced_accuracy_score
 
 
 def answer_04():
@@ -65,7 +65,7 @@ def answer_04():
     YES = 'YES'
     NO = 'NO'
     # Return YES or NO
-    return None
+    return NO
 
 
 def answer_05():
@@ -81,7 +81,7 @@ def answer_05():
     CASE3 = "CS"
     CASE4 = "CROP"
     # Return CASE1, CASE2, CASE3 or CASE4
-    return None
+    return CASE3
 
 
 
