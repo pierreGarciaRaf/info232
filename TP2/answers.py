@@ -93,7 +93,7 @@ def answer_06():
     under_fitting = "under-fitting"
     over_fitting  = "over-fitting"
     # Return under_fitting or over_fitting
-    return None
+    return over_fitting
 
 
 def answer_07():
@@ -103,16 +103,14 @@ def answer_07():
     under_fitting = "under-fitting"
     over_fitting  = "over-fitting"
     # Return under_fitting or over_fitting
-    return None
+    return under_fitting
 
 
 def answer_08():
     """
     Which models are over-fitting ?
     """
-    model_name = ["Nearest Neighbors", "Linear SVM", "RBF SVM", "Gaussian Process",
-         "Decision Tree", "Random Forest", "Neural Net", "AdaBoost",
-         "Naive Bayes", "QDA"]
+    model_name = ['RBF SVM', 'Decision Tree', 'Random Forest']
 
     overfitting_models = ["Replace", "with", "model", "names", "from", "the",  "list", "above"]
     return overfitting_models
@@ -122,9 +120,7 @@ def answer_09():
     """
     Which models are are under-fitting ?
     """
-    model_name = ["Nearest Neighbors", "Linear SVM", "RBF SVM", "Gaussian Process",
-         "Decision Tree", "Random Forest", "Neural Net", "AdaBoost",
-         "Naive Bayes", "QDA"]
+    model_name = ['Linear SVM', 'Naive Bayes']
 
     underfitting_models = ["Replace", "with", "model", "names", "from", "the", "list", "above"]
     return underfitting_models
